@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>MCA Gems</title>
+				<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+				<link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+				<script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+				<script type="text/javascript" src="layout/scripts/jquery.slidepanel.setup.js"></script>
+
+								
+                                <!-- Homepage Only Scripts -->
+		
+		<script type="text/javascript" src="layout/scripts/jquery.cycle.min.js"></script>
+			
+            						<!-- Sider timeout-->
+		<script type="text/javascript">
+			$(function() {
+    				$('#featured_slide').after('<div id="fsn"><ul id="fs_pagination">').cycle({
+        			timeout: 5000,
+        			fx: 'fade',
+        			pager: '#fs_pagination',
+        			pause: 1,
+        			pauseOnPagerHover: 0
+    				});
+				});
+		</script>
+<!-- End Homepage Only Scripts -->
+
+	</head>
+
+	<body>
+		<div class="wrapper col0">
+  		<div id="topbar">
+    	<div id="slidepanel">
+     
+      <div class="topbox">
+        <h2>Student's Registration Here</h2>
+        
+        												<!-- form design-->
+        <form action="register.php" method="post">
+          	<fieldset>
+            		<legend>Student's Registration Form</legend>
+            		<label for="teachername">Username:
+              			<input type="text" name="name" id="teachername" value="" placeholder="Enter user id" required />
+            		</label>
+                    
+            		<label for="teacherpass">Semester: 
+              			<input type="text" name="sem" id="teacherpass" value="" placeholder="Enter Your Name" required />
+                    </label>
+                        
+              		<label for="teacherpass">Registration Number:
+              			<input type="text" name="number" id="teacherpass" value="" placeholder=" Enter A valid e-mail"required />
+            		</label>
+                    
+            		<label for="teacherpass">Password:
+              			<input type="password" name="password" id="pass" value="" placeholder="at least of 8 character" required />
+            		</label>
+                    
+            		<label for="teacherpass">Confirm Password:
+              			<input type="password" name="con_pass" id="con_pass" value=""  required />
+            		</label>
+            
+            		<label for="teacherremember">
+              			<input class="checkbox" type="checkbox" name="teacherremember" id="teacherremember" checked="checked" />
+             			Remember me
+                   </label>
+            		<p>
+              			<input type="submit" name="teacherlogin" id="teacherlogin" value="SignUp" />
+              			&nbsp;<input type="reset" name="teacherreset" id="teacherreset" value="Reset" />
+            		</p>
+          	</fieldset>
+        </form>
+      </div>
+      <!-- Form end -->
+      
+      													<!-- login.php Connectivity -->
+      
+      
+      <div class="topbox last">
+        <h2>Student's Login Here</h2> 
+        	<form action="login.php" method="post">
+          		<fieldset>
+            		<legend>Students Login Form</legend>
+            		<label for="pupilname">Registration Number:
+              			<input type="text" name="number" id="pupilname" value="" placeholder="Enter Vaild Registration" required/>
+            		</label>
+            		
+                    <label for="pupilpass">Password:
+              			<input type="password" name="password" id ="pupilpass" value="" placeholder="Enter Your password" required />
+            		</label>
+            		<label for="pupilremember">
+              			<input class="checkbox" type="checkbox" name="pupilremember" id="pupilremember" checked="checked" />
+              			Remember me
+                    </label>
+            <p>
+              <input type="submit" name="pupillogin" id="pupillogin" value="Login" />
+              &nbsp;
+              <input type="reset" name="pupilreset" id="pupilreset" value="Reset" />
+            </p>
+          </fieldset>
+        </form>
+      </div>
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+      <ul>
+        <li class="left">Log In Here &raquo;</li>
+        <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Sign Up/in</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1>Christ University</h1>
+      <p>To be continue..</p>
+    </div>
+    <!-- Header Portion -->
+    <div id="topnav">
+      <ul>
+      
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="pages/sem1.html">SEM 1</a></li>
+        <li><a href="pages/sem2.html">SEM 2</a></li>
+        <li><a href="pages/sem3.html">SEM 3</a></li>
+        <li><a href="pages/sem4.html">SEM 4</a></li>
+        <li><a href="pages/sem5.html">SEM 5</a></li>
+        <li><a href="pages/sem6.html">SEM 6</a></li>
+        
+        <li class="last"></li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="featured_slide">
+    <div class="featured_box"><a href="#"><img src="../450*300.gif" alt="" /></a>
+      <div class="floater">
+        <h2>1. About Us..</h2>
+        <p>Christ University is proud of its organizational culture rooted in gospel values, mutual respect, personal maturity and integrity, teamwork and social concern. Christ University welcomes to its fold students from any part of India to build a sense of nationalism. The university nurtures an open attitude to integrate the wisdom of the East and the West. This sense of national and global outlook is clearly shown through its twinning programs with Universities and Colleges in India and abroad.  in our endeavour to build a better world.</p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="images/demo/450x300.gif" alt="" /></a>
+      <div class="floater">
+        <h2>2. Introduction </h2>
+        <p>
+The Department of Computer Science endeavours to imbibe the vision of the University in its goal to “develop IT professionals with ethical values”. The department focuses on empowering students with competencies in theoretical, programming, communication, team work, organisation and management skills. </p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="images/demo/colpic5.png" alt="" /></a>
+      <div class="floater">
+        <h2>3. Overview</h2>
+        <p>
+Department of Computer Science of Christ University strives to shape outstanding computer professionals with ethical and human values to reshape nations destiny. The training imparted aims to prepare young minds for the challenging opportunities in the IT industry with a global awareness rooted in the Indian soil, nourished and supported by experts in the field.</p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="images/demo/colpic2.png" alt="" /></a>
+      <div class="floater">
+        <h2>4. Master of Computer Applications (MCA)</h2>
+        <p>
+
+Master of Computer Applications (MCA) is a post-graduate programme of Christ University and approved by the All India Council of Technical Education (AICTE). It is a three-year programme spread over six semesters to bridge the chasm between computer studies and applications bringing within reach of enthusiastic youngsters an excellent group of experienced and dedicated staff and experts, and an enviable infrastructure. 
+</p>
+        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+      </div>
+    </div>
+    <div class="featured_box"><a href="#"><img src="images/demo/colpic3.png" alt="" /></a>
+      <div class="floater">
+        <h2>5. Festival </h2>
+        <p>&nbsp;</p>
+        <p>Gateways is a most effective way of bringing students under the same platform, for tomorrow's computer folks to meet up, compete, learn and grow. Students fight it out in an array of events and activities of technical and non-technical events. It is a vibrant place where many talented students showcased their skills and abilities from past few years. 
+The Department of Computer Science organized national level Intercollegiate IT Fest - GATEWAYS 2014 on 9th and 10th September 2014. </p>
+        <p class="readmore"><a href="#">Continue Re</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="homecontent">
+    <div class="fl_left">
+      <div class="column2">
+        <ul>
+          <li>
+            <h2>Gateways</h2>
+            <div class="imgholder"><img src="images/demo/gateways.jpg" alt="" /></div>
+            <p>Gateways is a most effective way of bringing students under the same platform, for tomorrow's computer folks to meet up, compete, learn and grow. </p>
+            <p>The Department of Computer Science organized national level Intercollegiate IT Fest - GATEWAYS 2014 on 9th and 10th September 2014. </p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+          </li>
+          <li class="last">
+            <h2>Revelations</h2>
+            <div class="imgholder"><img src="images/demo/revelations.jpg" alt="" /></div>
+            <p>"The only thing that remains constant is change”. Yes, this has become our attitude, and will remain our legacy to pass down. There has been more development in the past hundred years than the entire span of time since human-origin. Moore’s Law still holds strong. We are in an age where passion  are our hammer and sickle.</p>
+            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+          </li>
+        </ul>
+        <br class="clear" />
+      </div>
+      <div class="column2">
+        <h2>About This Project !</h2>
+       <!-- <img class="imgl" src="images/demo/imgl.gif" alt="" /> -->
+     <p>X-eBit, the Project Exhibition and Competition organized every year by the Department of Computer Science, Christ University, provides a platform for the postgraduate students to showcase their academic project work. X-eBit 2015 was organized on 26th February 2015, witnessed an overwhelming and enthusiastic participation from the students of IV semester MCA and II semester MSc Computer Science.
+ 
+The exhibition was inaugurated by Dr. Matthew Jacob Thazhuthaveetil, Professor, Supercomputer Education and Research Centre, and Department of Computer Science and Automation, Indian Institute of Science. His area of research is in Computer Architecture field.</p>
+      </div>
+    </div>
+    <div class="fl_right">
+      <h2>Latest From The Student Blog</h2>
+      <ul>
+        <li>
+          <div class="imgholder"><a href="#"><img src="images/demo/80x80.jpg" alt="" /></a></div>
+          <p><strong><a href="#">Prashanth Thomas - Desinger (1425940)</a></strong></p>
+          <p>Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet.</p>
+        </li>
+        <li>
+          <div class="imgholder"><a href="#"><img src="images/demo/80*801.jpg" alt="" /></a></div>
+          <p><strong><a href="#">Manvender Singh Rathore - Developer (1425931)</a></strong></p>
+          <p> Hi..  Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet.</p>
+        </li>
+        <li>
+          <div class="imgholder"><a href="#"><img src="images/demo/80*802.jpg" alt="" /></a></div>
+          <p><strong><a href="#">Pranoy Giri- Desinger(1425938) <a href="#"></a></strong></p>
+          <p>Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet.</p>
+        </li>
+        <li>
+          <div class="imgholder"><a href="#"><img src="images/demo/80*803.jpg" alt="" /></a></div>
+          <p><strong><a href="#">Jonathan Paul- Database Adminstrator (1425923)</a></strong></p>
+          <p>Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet.</p>
+        </li>
+        <li class="last">
+          <div class="imgholder"><a href="#"><img src="images/demo/80*804.jpg" alt="" /></a></div>
+          <p><strong><a href="#">Clinton Cardoza- Content Writter (1425912)</a></strong></p>
+          <p>Feugiatrutrum rhoncus semper enim massa eu intesque ipsum velit orci dolorem. Atnatis dolor tincidunt nulla elit auctortis laculisi elit fauctortor natis loreet.</p>
+        </li>
+      </ul>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col4">
+  
+  <div id="footer"> 
+    <div class="footbox">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#">Attendence</a></li>
+      </ul>
+      
+    </div>
+    <div class="footbox">
+      <p><br />
+        <br/>
+        </p>
+      <p>&nbsp;</p>
+      <p><a href="#">My Course</a></p>
+    </div>
+    <div class="footbox">
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><a href="#">Bunk Mate</a></p>
+    </div>
+    <div class="footbox"> 
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><a href="#">Library</a></p>
+    </div>
+    <div class="footbox last"> 
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><a href="#">Upcoming Events</a></p>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col5">
+  <div id="copyright">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved -By Christ University  : Designed By: Prashanth |Manvender | Jonthan | Prannoy | Clinton Cardoza <a href="#">...</a></p>
+    
+    <br class="clear" />
+  </div>
+</div>
+</body>
+</html>

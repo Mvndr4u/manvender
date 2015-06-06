@@ -1,0 +1,2 @@
+create table student(id int primary key auto_increment,name varchar(20),sem int,regno varchar(8));
+create table details(stu_id int references student(id),password varchar(20));
